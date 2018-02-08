@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/stylesheet.css">
   </head>
 
+<!-- TOP NAVIGATION -->
   <body>
     <div class="container px-5">
       <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-white px-0">
@@ -19,95 +20,250 @@
        <div class="collapse navbar-collapse" id="nav">
          <ul class="navbar-nav">
            <li class="nav-item px-3">
-             <a class="nav-link active" href="https://besasam.github.io/">Home</a>
+             <a class="nav-link" id="home-nav" href="#" onclick="navigate('home'); return false;">Home</a>
            </li>
            <li class="nav-item px-3">
-             <a class="nav-link" href="https://besasam.github.io/about.html">About</a>
+             <a class="nav-link" id="about-nav" href="#" onclick="navigate('about'); return false;">About</a>
            </li>
            <li class="nav-item px-3">
-             <a class="nav-link" href="https://besasam.github.io/demos.html">Demos</a>
+             <a class="nav-link" id="demos-nav" href="#" onclick="navigate('demos'); return false;">Demos</a>
            </li>
            <li class="nav-item px-3">
-             <a class="nav-link" href="https://besasam.github.io/gallery.html">Gallery</a>
+             <a class="nav-link" id="gallery-nav" href="#" onclick="navigate('gallery'); return false;">Gallery</a>
            </li>
          </ul>
        </div>
       </nav>
+<!-- TOP NAVIGATION END -->
 
-      <div class="row pb-3">
+<!-- HOME PAGE -->
+      <div class="page" id="home">
+        <div class="row">
+          <div class="col-sm">
+            <h1 class="display-4">Hi! I'm Besa.</h1>
+            <p class="lead">
+              I make things sometimes. This is the place for you to see them!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <p>
+              You can check out my <a href="https://besasam.github.io/demos.html">project showcase</a>, <a href="https://besasam.github.io/gallery.html">art gallery</a>, and follow me on social media for daily updates:
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm text-center">
+            <a href="https://github.com/besasam">
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+              <p>
+                <strong>GitHub</strong><br />
+                <small>Code snippets and projects</small>
+              </p>
+            </a>
+          </div>
+          <div class="col-sm text-center">
+            <a href="https://www.twitch.tv/besasama">
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitch fa-stack-1x fa-inverse"></i>
+              </span>
+              <p>
+                <strong>Twitch</strong><br />
+                <small>Streams Tue-Fri</small>
+              </p>
+            </a>
+          </div>
+          <div class="col-sm text-center">
+            <a href="https://twitter.com/besasam">
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+              <p>
+                <strong>Twitter</strong><br />
+                <small>Mindless ramblings</small>
+              </p>
+            </a>
+          </div>
+          <div class="col-sm text-center">
+            <a href="https://www.instagram.com/besasam/">
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+              <p>
+                <strong>Instagram</strong><br />
+                <small>Life in pictures (mostly selfies)</small>
+              </p>
+            </a>
+          </div>
+          <div class="col-sm text-center">
+            <a href="https://www.youtube.com/c/BesaDemiri">
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+              </span>
+              <p>
+                <strong>YouTube</strong><br />
+                <small>Song covers</small>
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+<!-- HOME PAGE END -->
+
+<!-- ABOUT PAGE -->
+      <div class="page" id="about">
+        <div class="row">
+          <div class="col-sm">
+            <h1 class="display-4">About</h1>
+            <p class="lead">
+              it is i, the frenchiest fry
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <img src="assets/img/self.jpg" style="width:200px; max-width: 80%" align="right" class="ml-3 rounded" />
+            <p>
+              Hi! I'm Besa. I'm 21 years old and hail from a small town near Cologne, Germany, where I attended school and spent most of my childhood playing video games,
+              drawing anime characters, and making my own little websites and games with the RPG Maker. After graduating at 16 <s>[humblebrag]</s>, I started studying Computer Science at
+              RWTH Aachen University which also gave me the opportunity to get first experiences working for a tech start-up, and in my university's IT department.
+              After four years of dabbling in different fields (mathematics and theoretical computer science still fascinate me) but not really getting anywhere,
+              I enrolled in a "dual" program that would allow me to get on-the-job training while still working on my degree. So now I live in Mannheim where I attend
+              Baden-Wuerttemberg Cooperative State University and work for an awesome IT company, learning to be software developer.
+            </p>
+            <p>
+              While my biggest passion will always be computer science, my other interests are pretty diverse. I still love drawing, painting, and creating pixel art,
+              making music by myself or with friends, sometimes taking out my camera for little photoshoots. Gaming is still a big hobby of mine&mdash;in late 2017, I joined
+              <a href="https://www.twitch.tv/besasama">Twitch</a> and started streaming my games (mostly casual and retro) a couple times a week.
+            </p>
+            <p>
+              Indie game developers like <a href="https://twitter.com/concernedape">ConcernedApe</a> and <a href="https://twitter.com/edmundmcmillen">Edmund McMillen</a>
+              greatly inspire me, and my goal is to be able to make a living with creating my own games someday.
+            </p>
+          </div>
+        </div>
+      </div>
+<!-- ABOUT PAGE END -->
+
+<!-- DEMOS PAGE -->
+      <div class="page" id="demos">
+        <div class="row">
+          <div class="col-sm">
+            <h1 class="display-4">Demos</h1>
+            <p class="lead">
+              Playground for my projects
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="demos/chroma-sort/index.html">
+              <div class="card">
+                <img class="card-img-top" src="assets/img/chroma-sort.png">
+                <div class="card-body">
+                  <h5 class="card-title">Chroma Sort</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Color sorting game</h6>
+                  <p class="card-text">
+                    January 2018
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+<!-- DEMOS PAGE END -->
+
+<!-- GALLERY PAGE -->
+      <div class="page" id="gallery">
+        <div class="row">
+          <div class="col-sm">
+            <h1 class="display-4">Gallery</h1>
+            <p class="lead">
+              Arts 'n' farts
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <p>
+              If you use/repost these, I'd be happy about a link back to my website! <i class="fas fa-xs fa-heart" style="color:#6f42c1"></i> If you just want to share, click the picture to get to its tweet.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="https://twitter.com/besasam/status/960955101253906432">
+              <div class="card text-center">
+                <div class="card-body">
+                  <img src="gallery/pixel/2018/zoasty2.gif" class="pb-3">
+                  <h5 class="card-title">Zoasty</h5>
+                  <a href="https://www.twitch.tv/zoasty"><h6 class="card-subtitle mb-2 text-muted">Twitch</h6></a>
+                  <a href="https://twitter.com/besasam/status/960955101253906432">
+                  <p class="card-text">
+                    02/2018
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="https://twitter.com/besasam/status/958429614346522624">
+              <div class="card text-center">
+                <div class="card-body">
+                  <img src="gallery/pixel/2018/sayori.png" class="pb-3">
+                  <h5 class="card-title">Sayori</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Doki Doki Literature Club</h6>
+                  <p class="card-text">
+                    January 2018
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+<!-- GALLERY PAGE END -->
+
+<!-- IMPRINT -->
+    <div class="page" id="imprint">
+      <div class="row">
         <div class="col-sm">
-          <h1 class="display-4">Hi! I'm Besa.</h1>
+          <h1 class="display-4">Imprint</h1>
           <p class="lead">
-            I make things sometimes. This is the place for you to see them!
+            Legal Disclosure
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <p class="text-secondary">
+            Information in accordance with section 5 of German TMG.
           </p>
           <p>
-            Looking a bit empty for now, I'll keep it up as more content keeps coming. In the meantime, feel free to follow me on social media for updates!
+            Besa Demiri<br />
+            Stolzeneckstraße 11A<br />
+            68219 Mannheim<br />
+            Germany
+          </p>
+          <h4>Contact</h4>
+          <p>
+            <i class="fas fa-envelope"></i> besasama[ät]outlook[döt]com
           </p>
         </div>
       </div>
-      <div class="row pb-3">
-        <div class="col-sm text-center">
-          <a href="https://github.com/besasam">
-            <span class="fa-stack fa-2x">
-              <i class="fas fa-circle fa-stack-2x"></i>
-              <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-            </span>
-            <p>
-              <strong>GitHub</strong><br />
-              <small>Code snippets and projects</small>
-            </p>
-          </a>
-        </div>
-        <div class="col-sm text-center">
-          <a href="https://www.twitch.tv/besasama">
-            <span class="fa-stack fa-2x">
-              <i class="fas fa-circle fa-stack-2x"></i>
-              <i class="fab fa-twitch fa-stack-1x fa-inverse"></i>
-            </span>
-            <p>
-              <strong>Twitch</strong><br />
-              <small>Streams Tue-Fri</small>
-            </p>
-          </a>
-        </div>
-        <div class="col-sm text-center">
-          <a href="https://twitter.com/besasam">
-            <span class="fa-stack fa-2x">
-              <i class="fas fa-circle fa-stack-2x"></i>
-              <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-            </span>
-            <p>
-              <strong>Twitter</strong><br />
-              <small>Mindless ramblings</small>
-            </p>
-          </a>
-        </div>
-        <div class="col-sm text-center">
-          <a href="https://www.instagram.com/besasam/">
-            <span class="fa-stack fa-2x">
-              <i class="fas fa-circle fa-stack-2x"></i>
-              <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-            </span>
-            <p>
-              <strong>Instagram</strong><br />
-              <small>Life in pictures (mostly selfies)</small>
-            </p>
-          </a>
-        </div>
-        <div class="col-sm text-center">
-          <a href="https://www.youtube.com/c/BesaDemiri">
-            <span class="fa-stack fa-2x">
-              <i class="fas fa-circle fa-stack-2x"></i>
-              <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
-            </span>
-            <p>
-              <strong>YouTube</strong><br />
-              <small>Song covers</small>
-            </p>
-          </a>
-        </div>
-      </div>
+    </div>
+<!-- IMPRINT END -->
 
+<!-- FOOTER -->
       <ul class="nav justify-content-center bg-white pt-4">
         <li class="nav-item">
           <a class="nav-link active" href="https://github.com/besasam"><i class="fab fa-github"></i></a>
@@ -127,10 +283,35 @@
       </ul>
       <div class="row pb-3">
         <div class="col-sm text-center">
-          <a href="https://besasam.github.io/imprint.html" class="text-secondary"><small>Imprint</small></a>
+          <a href="#" onclick="navigate('imprint'); return false;" class="text-secondary"><small>Imprint</small></a>
         </div>
       </div>
     </div>
+<!-- FOOTER END -->
+
+    <script>
+      function hidePages() {
+        var navlinks = document.getElementsByClassName('nav-link');
+        for(var i = 0; i < navlinks.length; i++) {
+          navlinks[i].classList.remove('active');
+        }
+        var pages = document.getElementsByClassName('page');
+        for(var i = 0; i < pages.length; i++) {
+          pages[i].style.display = 'none';
+        }
+      }
+
+      function navigate(page) {
+        hidePages();
+        var current = document.getElementById(page);
+        var nav = document.getElementById(page + '-nav')
+        current.style.display = 'inline';
+        nav.classList.add('active');
+      }
+
+      hidePages();
+      navigate('home');
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
