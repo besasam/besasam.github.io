@@ -297,16 +297,25 @@
         }
         var pages = document.getElementsByClassName('page');
         for(var i = 0; i < pages.length; i++) {
-          pages[i].style.display = 'none';
+          current = pages[i];
+          current.style.opacity = 0;
+          setTimeout(function(current) {
+            current.style.display = 'none';
+          }, 500, current);
         }
       }
 
       function navigate(page) {
         hidePages();
-        var current = document.getElementById(page);
         var nav = document.getElementById(page + '-nav')
-        current.style.display = 'inline';
         nav.classList.add('active');
+        var current = document.getElementById(page);
+        setTimeout(function(current) {
+          current.style.display = 'block';
+          setTimeout(function(current) {
+            current.style.opacity = 1;
+          }, 10, current);
+        }, 500, current);
       }
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

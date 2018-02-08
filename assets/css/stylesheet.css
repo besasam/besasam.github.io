@@ -7,3 +7,9 @@ body {
 
 a:hover {
   text-decoration: none; }
+
+.page {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
