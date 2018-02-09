@@ -140,13 +140,28 @@
               Baden-Wuerttemberg Cooperative State University and work for an awesome IT company, learning to be software developer.
             </p>
             <p>
-              While my biggest passion will always be computer science, my other interests are pretty diverse. I still love drawing, painting, and creating pixel art,
-              making music by myself or with friends, sometimes taking out my camera for little photoshoots. Gaming is still a big hobby of mine&mdash;in late 2017, I joined
+              While my biggest passion will always be computer science, my other interests are pretty diverse. I love drawing, painting, and creating pixel art,
+              making music by myself or with friends (I upload song covers on <a href="https://www.youtube.com/c/BesaDemiri">YouTube</a> sometimes), sometimes taking out my camera for little photoshoots. Gaming is still a big hobby of mine&mdash;in late 2017, I joined
               <a href="https://www.twitch.tv/besasama">Twitch</a> and started streaming my games (mostly casual and retro) a couple times a week.
             </p>
             <p>
               Indie game developers like <a href="https://twitter.com/concernedape">ConcernedApe</a> and <a href="https://twitter.com/edmundmcmillen">Edmund McMillen</a>
-              greatly inspire me, and my goal is to be able to make a living with creating my own games someday.
+              greatly inspire me, and my goal is to be able to make a living with developing games someday. So right now I'm honing my programming and
+              digital art skills, and I hope to learn some digital music production as well, so I can create my own games from the ground up,
+              building them exactly the way I envisioned them. Such a dream. ✨
+            </p>
+            <p>
+              I'm also a huge proponent of <em>free</em> software (<em>free</em> as in liberty, not free as in beer&mdash;emphasis added for clarity). That's why I publish all my works under the
+              <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>, meaning you're <em>free</em> to take and use parts or all of my code for whatever
+              purpose you like, as long as the end product is licensed the same way. I think this is a great way to spread the free software movement&mdash;
+              as more and more <em>free</em> apps and programs are released and more and more people use them and developers contribute, the quality continously
+              increases and gets close to the level of their commercial/proprietary counterparts. I'm still waiting on major game developers to get the hint and
+              start to release their games on Linux too, it's one of the last things holding me back from completely making the switch from Windows.
+            </p>
+            <p>
+              Fun fact, I got three keycharms on my rucksack that perfectly encompass my personality. There's an old Intel Pentium 4 processor, because I like
+              computers (if you haven't noticed), a Legend of Zelda Triforce, because I like playing games (<em>if you haven't noticed</em>), and a poop emoji,
+              because <em>duh</em>. 💩
             </p>
           </div>
         </div>
@@ -166,13 +181,13 @@
         <div class="row">
           <div class="col-sm-3">
             <a href="demos/chroma-sort/index.html">
-              <div class="card">
+              <div class="card text-center">
                 <img class="card-img-top" src="assets/img/chroma-sort.png">
                 <div class="card-body">
                   <h5 class="card-title">Chroma Sort</h5>
                   <h6 class="card-subtitle mb-2 text-muted">Color sorting game</h6>
                   <p class="card-text">
-                    January 2018
+                    01/2018&ndash;
                   </p>
                 </div>
               </div>
@@ -223,7 +238,7 @@
                   <h5 class="card-title">Sayori</h5>
                   <h6 class="card-subtitle mb-2 text-muted">Doki Doki Literature Club</h6>
                   <p class="card-text">
-                    January 2018
+                    01/2018
                   </p>
                 </div>
               </div>
@@ -257,6 +272,9 @@
           <h4>Contact</h4>
           <p>
             <i class="fas fa-envelope"></i> besasama[ät]outlook[döt]com
+          </p>
+          <p>
+            <small>Under German law, anyone who runs a website is required to supply their contact information clearly on the site. Don't be a troll and abuse this information.</small>
           </p>
         </div>
       </div>
@@ -307,8 +325,10 @@
 
       function navigate(page) {
         hidePages();
-        var nav = document.getElementById(page + '-nav')
-        nav.classList.add('active');
+        if(page !== 'imprint') {
+          var nav = document.getElementById(page + '-nav')
+          nav.classList.add('active');
+        }
         var current = document.getElementById(page);
         setTimeout(function(current) {
           current.style.display = 'block';
