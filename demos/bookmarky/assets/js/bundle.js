@@ -3,7 +3,9 @@
 
 let theme = "light";
 
-function toggleTheme() {
+let themeToggler = document.getElementById('theme-toggle');
+
+themeToggler.addEventListener("click", function() {
   if(document.getElementById('css-color').href.slice(-9) == "light.css") {
     document.getElementById('css-color').href = "assets/css/dark.css";
     document.getElementById('theme-toggle-icon').classList.remove("far");
@@ -15,7 +17,7 @@ function toggleTheme() {
     document.getElementById('theme-toggle-icon').classList.add("far");
     theme = "light";
   }
-}
+});
 
 
 
